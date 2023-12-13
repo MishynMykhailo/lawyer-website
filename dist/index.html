@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <header id="header ">
+    <header id="header" class="header">
       <div class="container header-cont">
         <div>
           <a href="#">
@@ -43,7 +43,17 @@
             </li>
           </ul>
         </nav>
-        <button>+372 698 21 75</button>
+        <div id="mob-menu">
+          <button class="btn-mobile-menu__open " data-menu-open="">
+          <!-- <svg class="btn-mobile-menu__icon-open">
+              <use href="./images/sprites.svg#icon-mobile-menu-open"></use>
+            </svg> -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        </div>
+        <button class="header-contact__btn">+372 698 21 75</button>
       </div>
     </header>
     <main id="main">
@@ -291,40 +301,203 @@
         <div class="container">
           <h1 class="people-title">С вами работают</h1>
           <p class="people-descr">С Вами работают Наша команда экспертов Crypto License и Fintech Lawyers стремится предоставлять первоклассную юридическую поддержку и рекомендации нашим клиентам.</p>
-        </div>
-        <div class="people-block">
-          <div class="people-left">
-            <img src="./images/people1.png" alt="people1" />
-            <h4 class="people-left__title">Юлия Барабаш</h4>
-            <p class="people-left__position">Управляющий партнер</p>
-            <p class="people-left__descr">
-              Управляющий партнер Управляющий партнер SBSB FinTech Lawyers. Юлия основала компанию в 2013 году и уже на протяжении 10 лет консультирует в области финтеха, занимается запуском платежных
-              систем и необанков, сопровождением инвестиционных и криптопроектов, открытием компаний по всему миру.
-            </p>
-            <div class="people-left__contact">
-              <span class="people-left__contact-phone"></span>
-              <span class="people-left__contact-email"></span>
+          <div class="people-block">
+            <div class="people-left">
+              <img class="people-left__images" src="./images/people1.png" alt="people1" />
+              <h4 class="people-left__title">Юлия Барабаш</h4>
+              <p class="people-left__position">Управляющий партнер</p>
+              <p class="people-left__descr">
+                Управляющий партнер Управляющий партнер SBSB FinTech Lawyers. Юлия основала компанию в 2013 году и уже на протяжении 10 лет консультирует в области финтеха, занимается запуском
+                платежных систем и необанков, сопровождением инвестиционных и криптопроектов, открытием компаний по всему миру.
+              </p>
+              <div class="people-left__contact">
+                <span class="people-left__contact-phone">
+                  <svg class="people-icon">
+                    <use href="./images/sprites.svg#icon-phone"></use>
+                  </svg>
+                </span>
+                <span class="people-left__contact-email">
+                  <svg class="people-icon">
+                    <use href="./images/sprites.svg#icon-email"></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="people-right">
+              <img class="people-right__images" src="./images/people2.png" alt="people2" />
+              <h4 class="people-right__title">Иван Невзоров</h4>
+              <p class="people-right__position">Глава финтех-департамента</p>
+              <p class="people-right__descr">
+                Иван возглавляет финтех-департамент SBSB Fintech Lawyers с 2020 года. Имеет большой опыт по запуску и сопровождению финтех и криптопроектов. Со своей командой получил более 30
+                криптолицензий в Италии, Литве, Эстонии, Польше, Словакии, Сингапуре, Чехии и Канаде.
+              </p>
+              <div class="people-right__contact">
+                <span class="people-right__contact-phone">
+                  <svg class="people-icon">
+                    <use href="./images/sprites.svg#icon-phone"></use>
+                  </svg>
+                </span>
+                <span class="people-right__contact-email">
+                  <svg class="people-icon">
+                    <use href="./images/sprites.svg#icon-email"></use>
+                  </svg>
+                </span>
+              </div>
             </div>
           </div>
-          <div class="people-right">
-            <img src="./images/people2.png" alt="people2" />
-            <h4 class="people-right__title">Иван Невзоров</h4>
-            <p class="people-right__position">Глава финтех-департамента</p>
-            <p class="people-right__descr">
-              Иван возглавляет финтех-департамент SBSB Fintech Lawyers с 2020 года. Имеет большой опыт по запуску и сопровождению финтех и криптопроектов. Со своей командой получил более 30
-              криптолицензий в Италии, Литве, Эстонии, Польше, Словакии, Сингапуре, Чехии и Канаде.
-            </p>
-            <div class="people-right__contact">
-              <span class="people-right__contact-phone"></span>
-              <span class="people-right__contact-email"></span>
-            </div>
-          </div>
+          <button class="people-btn" type="button">Бесплатная консультация</button>
         </div>
       </section>
       <!-- SECTION PEOPLE END -->
+      <!-- SECTION QUESTION -->
+      <section class="section-question">
+        <div class="container">
+          <h4 class="question-title">Остались вопросы?</h4>
+          <p class="question-descr">Наш FAQ по лицензированию криптовалюты охватывает юридические требования, получение лицензий, обязательства по соблюдению и риски для криптовалютного бизнеса.</p>
+          <ul class="question-list">
+            <li class="question-list__item">
+              <div class="question-list__item-block">
+                <p class="question-list__item-block__title">Как создать криптобиржу?</p>
+                <svg class="question-icons question-icon-close">
+                  <use href="./images/sprites.svg#icon-arrow-bottom"></use>
+                </svg>
+                <svg class="question-icons question-icon-open">
+                  <use href="./images/sprites.svg#icon-arrow-top"></use>
+                </svg>
+              </div>
+              <div class="question-list__item-text">
+                <p class="question-list__item-text__descr">
+                  Для открытия криптовалютной биржи, одним из важных этапов является получение криптолицензии. Это даст возможность законно работать с фиатными средствами и сотрудничать с банками и
+                  платежными системами. Чтобы получить криптолицензию, необходимо выполнить ряд условий, таких как должный мониторинг транзакций, наличие офиса, наличие местного члена правления и
+                  уплата государственной пошлины. Затем откройте счет в банке или платежной системе и настройте процессинг на сайте. Это основные этапы для запуска криптовалютной биржи. Юристы
+                  компании SBSB Fintech Lawyers имеют огромный опыт в сфере криптопроектов и готовы оказать полную поддержку в запуске вашей криптобиржи и получении соответствующей лицензии.
+                </p>
+              </div>
+            </li>
+            <li class="question-list__item">
+              <div class="question-list__item-block">
+                <p class="question-list__item-block__title">Как подключить криптопроцессинг на сайт?</p>
+                <svg class="question-icons question-icon-close">
+                  <use href="./images/sprites.svg#icon-arrow-bottom"></use>
+                </svg>
+                <svg class="question-icons question-icon-open">
+                  <use href="./images/sprites.svg#icon-arrow-top"></use>
+                </svg>
+              </div>
+              <div class="question-list__item-text">
+                <p class="question-list__item-text__descr">
+                  С ростом криптоиндустрии все больше компаний задумываются о внедрении криптопроцессинга на своих сайтах. Это связано с растущей популярностью криптовалют и готовностью потребителей
+                  использовать их для оплаты товаров и услуг. Криптопроцессинг позволяет клиентам совершать онлайн-транзакции за товары и услуги криптовалютой и может значительно улучшить
+                  конкурентоспособность вашей компании. Услуга подключения криптоплатежей на сайт от SBSB поможет мерчантам принимать платежи в криптовалюте. На каждом этапе внедрения мы сопровождаем
+                  клиентов и делаем все необходимое для быстрого и оперативного подключения криптопроцессинга на сайт. Команда SBSB Fintech Lawyers обеспечит максимально простой и быстрый процесс
+                  подключения криптоплатежей на ваш сайт. Наши юристы помогут вам с интеграцией криптоплатежей всего за несколько дней, чтобы вы могли начать принимать платежи в цифровой валюте как
+                  можно скорее.
+                </p>
+              </div>
+            </li>
+            <li class="question-list__item">
+              <div class="question-list__item-block">
+                <p class="question-list__item-block__title">Что такое криптокосалтинг?</p>
+                <svg class="question-icons question-icon-close">
+                  <use href="./images/sprites.svg#icon-arrow-bottom"></use>
+                </svg>
+                <svg class="question-icons question-icon-open">
+                  <use href="./images/sprites.svg#icon-arrow-top"></use>
+                </svg>
+              </div>
+              <div class="question-list__item-text">
+                <p class="question-list__item-text__descr">
+                  Компания SBSB Fintech Lawyers специализируется на предоставлении профессиональных бизнес-услуг в области криптоконсалтинга. Мы предоставляем полноценную консультацию по вопросам
+                  местного корпоративного и налогового законодательства, а также помогаем в легализации криптовалюты. Кроме того, оказываем юридическую поддержку стартапам, занимающимся
+                  блокчейн-технологиями и криптовалютами, а также проектам по запуску ICO/STO, сопровождением NFT маркетплейсов, DAO и Gamify проектов.
+                </p>
+              </div>
+            </li>
+
+            <li class="question-list__item">
+              <div class="question-list__item-block">
+                <p class="question-list__item-block__title">Для каких задач бизнеса поможет криптоконсалтинг?</p>
+                <svg class="question-icons question-icon-close">
+                  <use href="./images/sprites.svg#icon-arrow-bottom"></use>
+                </svg>
+                <svg class="question-icons question-icon-open">
+                  <use href="./images/sprites.svg#icon-arrow-top"></use>
+                </svg>
+              </div>
+              <div class="question-list__item-text">
+                <p class="question-list__item-text__descr">Юридическая компания SBSB Fintech Lawyers предоставляет услуги криптоконсалтинга, которые позволят решить множество задач, а именно:</p>
+                <ul class="question-list__item-list">
+                  <li class="question-list__item-list__item">консультации по запуску NFT маркетплейса;</li>
+                  <li class="question-list__item-list__item">открытие банковских счетов, налоговые и другие консультации в сфере NFT;</li>
+                  <li class="question-list__item-list__item">помощь в регистрации крипто компании;</li>
+                  <li class="question-list__item-list__item">консультации по открытию корпоративного счета под крипто проект;</li>
+                  <li class="question-list__item-list__item">рекомендации по работе с криптовалютой и заработку на ней;</li>
+                  <li class="question-list__item-list__item">консультации по легальному уплате налогов с криптовалюты;</li>
+                  <li class="question-list__item-list__item">помощь в выпуске собственного токена;</li>
+                  <li class="question-list__item-list__item">помощь в выборе юрисдикции для работы с криптовалютой.</li>
+                </ul>
+                <p class="question-list__item-text__descr">Криптоконсалтинг — это лишь одна из услуг, которые мы можем предложить нашим клиентам.</p>
+              </div>
+            </li>
+
+            <li class="question-list__item">
+              <div class="question-list__item-block">
+                <p class="question-list__item-block__title">Где получить криптолицензию?</p>
+                <svg class="question-icons question-icon-close">
+                  <use href="./images/sprites.svg#icon-arrow-bottom"></use>
+                </svg>
+                <svg class="question-icons question-icon-open">
+                  <use href="./images/sprites.svg#icon-arrow-top"></use>
+                </svg>
+              </div>
+              <div class="question-list__item-text">
+                <p class="question-list__item-text__descr">
+                  Если вы ищете подходящую юрисдикцию для вашего криптопроекта, то необходимо учитывать ваши потребности и приоритеты. Выбор юрисдикции может зависеть от таких факторов, как налоговая
+                  нагрузка, бухгалтерские требования, частота и объемы движения средств и другие. Каждая страна имеет свои преимущества и недостатки. Если вы планируете запустить свою собственную
+                  криптовалюту или ICO проект, то стоит обратить внимание на такие страны, как Польша, Чехия, Сингапур, Канада, Словакия, Болгария, Казахстан и Литва. Однако, стоит отметить, что
+                  процесс получения криптолицензии может быть дорогостоящим и затратным в плане времени. Поэтому рекомендуется внимательно изучить требования и возможности в каждой конкретной стране.
+                  Чтобы облегчить процесс получения криптолицензии и сократить время на его выполнение, рекомендуется обратиться за юридическими консультациями и профессиональным сопровождением.
+                  Компания SBSB Fintech Lawyers предоставляет такие услуги и готова помочь клиентам в получении криптолицензии, учитывая специфику законодательства и правил регулирования в разных
+                  странах. Наши юристы имеют богатый опыт в области криптовалют и готовы предоставить полную юридическую поддержку в вашем проекте. Свяжитесь с нами для получения более подробной
+                  информации о наших услугах и специалистах. Мы готовы помочь вам в выборе оптимальной юрисдикции для вашего криптопроекта и обеспечить юридическую поддержку на протяжении всего
+                  процесса получения криптолицензии.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- SECTION QUESTION END -->
     </main>
-    <footer id="footer">
-      <div class="container"></div>
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="footer-block">
+          <p class="footer-block__title">КТО МЫ</p>
+          <p class="footer-block__descr">SBSB Fintech Lawyers это команда финтех и крипто юристов.</p>
+        </div>
+        <div class="footer-block">
+          <p class="footer-block__title">О НАС</p>
+          <p class="footer-block__descr">
+            Работая с 2013 года, мы имеем глубокую экспертизу в сопровождении крипто проектов, получении лицензий для криптобирж и криптообменников, регистрации криптофондов и криптобанков, запуске
+            проектов на блокчейне.
+          </p>
+        </div>
+        <div class="footer-block">
+          <p class="footer-block__title">СВЯЗАТЬСЯ С НАМИ</p>
+          <p class="footer-block__descr">
+            ЭСТОНИЯ
+            <span class="footer-block__descr-decor">+372.698.2175</span>
+          </p>
+          <p class="footer-block__descr">
+            ВЕЛИКОБРИТАНИЯ
+            <span class="footer-block__descr-decor">+44 741 835-86-82</span>
+          </p>
+          <p class="footer-block__descr footer-email">office@sb-sb.com</p>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">Copyright ©2023 2012—2023 «SBSB» All rights reserved.</p>
+        </div>
+      </div>
     </footer>
     <script src="./js/app.min.js"></script>
   </body>
