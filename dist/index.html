@@ -18,47 +18,56 @@
             <img class="logo" src="./images/logo.png" alt="logo" />
           </a>
         </div>
-        <nav class="header-nav">
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a href="#" class="header-nav__link">О нас</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#" class="header-nav__link">Услуги</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#" class="header-nav__link">Клиенты</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#" class="header-nav__link">Как мы работаем</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#" class="header-nav__link">Команда</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#" class="header-nav__link">FAQ</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#" class="header-nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div id="mob-menu">
-          <button class="btn-mobile-menu__open " data-menu-open="">
-          <!-- <svg class="btn-mobile-menu__icon-open">
-              <use href="./images/sprites.svg#icon-mobile-menu-open"></use>
-            </svg> -->
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        </div>
         <button class="header-contact__btn">+372 698 21 75</button>
+
+        <div id="mob-menu">
+          <button class="btn-mobile-menu__open" data-menu-open="">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="mobile-backdrop is-hidden"></div>
+          <div class="mobile-menu" data-menu="">
+            <div class="mobile-menu__nav">
+              <nav class="header-nav">
+                <ul class="header-nav__list">
+                  <li class="header-nav__item">
+                    <a href="#hero" class="header-nav__link">О нас</a>
+                  </li>
+                  <li class="header-nav__item">
+                    <a href="#achievements" class="header-nav__link">Услуги</a>
+                  </li>
+                  <li class="header-nav__item">
+                    <a href="#partners" class="header-nav__link">Клиенты</a>
+                  </li>
+                  <li class="header-nav__item">
+                    <a href="#work" class="header-nav__link">Как мы работаем</a>
+                  </li>
+                  <li class="header-nav__item">
+                    <a href="#people" class="header-nav__link">Команда</a>
+                  </li>
+                  <li class="header-nav__item">
+                    <a href="#question" class="header-nav__link">FAQ</a>
+                  </li>
+                  <li class="header-nav__item">
+                    <a href="#footer" class="header-nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <button class="btn-mobile-menu__close" data-menu-close="">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
       </div>
     </header>
     <main id="main">
       <!-- SECTION HERO -->
-      <section class="section-hero">
+      <section class="section-hero" id="hero">
         <div class="container">
           <div class="hero-block">
             <div class="hero-block__left">
@@ -80,7 +89,7 @@
       </section>
       <!-- SECTION HERO END -->
       <!-- SECTION achievements -->
-      <section class="section-achievements">
+      <section class="section-achievements" id="achievements">
         <div class="container">
           <ul class="achievements-list">
             <li class="achievements-list__item">
@@ -152,7 +161,7 @@
       </section>
       <!-- SECTION POSS END-->
       <!-- SECTION PARTNERS -->
-      <section class="section-partners">
+      <section class="section-partners" id="partners">
         <div class="container">
           <h4 class="partners-title">НАШИ КЛИЕНТЫ И ПАРТНЕРЫ</h4>
           <ul class="partners-list">
@@ -194,7 +203,7 @@
       </section>
       <!-- SECTION PARTNERS END-->
       <!-- SECTION WORKS -->
-      <section class="section-works">
+      <section class="section-works" id="work">
         <div class="container">
           <h3 class="works-title">Как мы работаем</h3>
           <ul class="works-list">
@@ -223,7 +232,7 @@
       </section>
       <!-- SECTION WORKD END -->
       <!-- SECTION WHY -->
-      <section class="section-why">
+      <section class="section-why" id="why">
         <div class="container">
           <div class="why-block">
             <div class="why-block__left">
@@ -297,7 +306,7 @@
       </section>
       <!-- SECTION WHY END -->
       <!-- SECTION PEOPLE -->
-      <section class="section-people">
+      <section class="section-people" id="people">
         <div class="container">
           <h1 class="people-title">С вами работают</h1>
           <p class="people-descr">С Вами работают Наша команда экспертов Crypto License и Fintech Lawyers стремится предоставлять первоклассную юридическую поддержку и рекомендации нашим клиентам.</p>
@@ -350,7 +359,7 @@
       </section>
       <!-- SECTION PEOPLE END -->
       <!-- SECTION QUESTION -->
-      <section class="section-question">
+      <section class="section-question" id="question">
         <div class="container">
           <h4 class="question-title">Остались вопросы?</h4>
           <p class="question-descr">Наш FAQ по лицензированию криптовалюты охватывает юридические требования, получение лицензий, обязательства по соблюдению и риски для криптовалютного бизнеса.</p>
