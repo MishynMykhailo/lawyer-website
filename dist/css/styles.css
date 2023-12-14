@@ -260,6 +260,11 @@ html {
   justify-content: center;
 }
 
+.hero-block__right-img {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .hero-block__left-btn {
   font-size: 18px;
   font-weight: 600;
@@ -588,6 +593,7 @@ html {
   max-width: 350px;
   margin: auto;
   display: flex;
+  justify-content: center;
 }
 
 .section-question {
@@ -822,6 +828,69 @@ html {
   align-items: center !important;
   justify-content: center !important;
   align-items: center !important;
+}
+
+.form-component {
+  display: flex;
+  justify-content: center;
+}
+
+.form-component__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  gap: 10px;
+  background-color: var(--color-white);
+  padding: 20px;
+  border-radius: var(--standart-radius);
+  box-shadow: 0px 4px 8px 5px rgba(34, 60, 80, 0.2);
+}
+
+.form-component__form-label:hover > .form-component__form-input {
+  border-color: var(--color-yellow);
+}
+
+.form-component__form-input {
+  width: 100%;
+  border: 2px solid rgba(128, 128, 128, 0.53);
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  box-shadow: var(--standart-shadow);
+  transition: 250ms all ease;
+}
+
+.form-access {
+  width: 15px;
+  margin: 0px 10px 0px 0px;
+}
+
+.access-text {
+  font-size: 12px;
+  color: var(--color-gray);
+}
+
+.form-component__form-access {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+
+.form-component__form-btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-white);
+  background: var(--color-yellow);
+  border-radius: var(--standart-radius);
+  border: none;
+  padding: 15px 35px;
+  transition: 250ms all ease;
+}
+
+.form-component__form-btn:hover,
+.form-component__form-btn:focus {
+  background: #b07f25;
 }
 
 @media screen and (min-width: 480px) {
