@@ -4,21 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.min.css" />
-    <title>Document</title>
-
+    <title>LeadGrip | Помощь с возвратом средств</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      fbq("init", '<?php echo ($_GET["suda"]); ?>');
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=
+      <?php echo ($_GET["suda"]); ?>
+      &ev=PageView&noscript=1" />
+    </noscript>
   </head>
   <body>
     <header id="header" class="header">
       <div class="container header-cont">
         <div>
           <a href="#">
-            <img class="logo" src="./images/logo.png" alt="logo" />
+            <!-- <img class="logo" src="./images/logo.png" alt="logo" /> -->
+            <p class="logo-text">LeadGrid</p>
           </a>
         </div>
-        <button class="header-contact__btn">+372 698 21 75</button>
+        <button class="header-contact__btn">+372 5717 50 34</button>
 
         <div id="mob-menu">
           <button class="btn-mobile-menu__open" data-menu-open="">
@@ -76,7 +99,6 @@
                 <li class="hero-block__left-item">
                   SBSB за последние 6 месяцев SBSB уже более 10 лет работает в области криптовалют и финтеха, обладая значительным опытом и множеством успешных проектов
                 </li>
-                <li class="hero-block__left-item">Мы помогаем криптопроектам в получении лицензий для криптобирж, регистрации криптофондов и банков, запуске блокчейн-проектов и т.д.</li>
                 <li class="hero-block__left-item">Мы — команда профессионалов, которые всегда готовы помочь вам с юридическими потребностями в области криптовалют.</li>
               </ul>
               <div class="form-component" id="form-component">
@@ -109,6 +131,9 @@
             </div>
             <div class="hero-block__right">
               <img class="hero-block__right-img" src="./images/hero-block-right.png" alt="hero-right-img" />
+              <img class="hero-block__right-coin coin-first" src="./images/coin.png" alt="coin" />
+              <img class="hero-block__right-coin coin-two" src="./images/coin-2.png" alt="coin" />
+              <img class="hero-block__right-coin coin-three" src="./images/coin-3.png" alt="coin" />
             </div>
           </div>
         </div>
@@ -153,6 +178,11 @@
         <div class="container">
           <ul class="possibilities-list">
             <li class="possibilities-list__item">
+              <h4 class="possibilities-item__title">Возврат средств</h4>
+              <p class="possibilities-item__descr">Череж биржи, страховые компании, восстановление криптокошельков</p>
+              <a href="#orderForm" class="possibilities-item__btn">Подробнее</a>
+            </li>
+            <li class="possibilities-list__item">
               <h4 class="possibilities-item__title">Получение Криптолицензии</h4>
               <p class="possibilities-item__descr">Анализ проекта, подбор юрисдикции, полное сопровождение</p>
               <a href="#orderForm" class="possibilities-item__btn">Подробнее</a>
@@ -160,11 +190,6 @@
             <li class="possibilities-list__item">
               <h4 class="possibilities-item__title">Юридическая Поддержка Крипто-стартапов</h4>
               <p class="possibilities-item__descr">Комплексное юридическое сопровождение крипто-стартапов</p>
-              <a href="#orderForm" class="possibilities-item__btn">Подробнее</a>
-            </li>
-            <li class="possibilities-list__item">
-              <h4 class="possibilities-item__title">Лицензия Криптофонда</h4>
-              <p class="possibilities-item__descr">Консалтинг, подбор юрисдикции, помощь в сопровождении</p>
               <a href="#orderForm" class="possibilities-item__btn">Подробнее</a>
             </li>
             <li class="possibilities-list__item">
@@ -347,14 +372,18 @@
               </p>
               <div class="people-left__contact">
                 <span class="people-left__contact-phone">
-                  <svg class="people-icon">
-                    <use href="./images/sprites.svg#icon-phone"></use>
-                  </svg>
+                  <a href="tel:+37257175034" class="people-action">
+                    <svg class="people-icon">
+                      <use href="./images/sprites.svg#icon-phone"></use>
+                    </svg>
+                  </a>
                 </span>
                 <span class="people-left__contact-email">
-                  <svg class="people-icon">
-                    <use href="./images/sprites.svg#icon-email"></use>
-                  </svg>
+                  <a href="mailto:info@leadgrid.help" class="people-action">
+                    <svg class="people-icon">
+                      <use href="./images/sprites.svg#icon-email"></use>
+                    </svg>
+                  </a>
                 </span>
               </div>
             </div>
@@ -366,16 +395,20 @@
                 Иван возглавляет финтех-департамент SBSB Fintech Lawyers с 2020 года. Имеет большой опыт по запуску и сопровождению финтех и криптопроектов. Со своей командой получил более 30
                 криптолицензий в Италии, Литве, Эстонии, Польше, Словакии, Сингапуре, Чехии и Канаде.
               </p>
-              <div class="people-right__contact">
-                <span class="people-right__contact-phone">
-                  <svg class="people-icon">
-                    <use href="./images/sprites.svg#icon-phone"></use>
-                  </svg>
+              <div class="people-left__contact">
+                <span class="people-left__contact-phone">
+                  <a href="tel:+37257175034" class="people-action">
+                    <svg class="people-icon">
+                      <use href="./images/sprites.svg#icon-phone"></use>
+                    </svg>
+                  </a>
                 </span>
-                <span class="people-right__contact-email">
-                  <svg class="people-icon">
-                    <use href="./images/sprites.svg#icon-email"></use>
-                  </svg>
+                <span class="people-left__contact-email">
+                  <a href="mailto:info@leadgrid.help" class="people-action">
+                    <svg class="people-icon">
+                      <use href="./images/sprites.svg#icon-email"></use>
+                    </svg>
+                  </a>
                 </span>
               </div>
             </div>
@@ -520,23 +553,26 @@
         <div class="footer-block">
           <p class="footer-block__title">СВЯЗАТЬСЯ С НАМИ</p>
           <p class="footer-block__descr">
+            <span class="footer-block__descr-decor">+372 5717 50 34</span>
+          </p>
+          <!-- <p class="footer-block__descr">
             ЭСТОНИЯ
             <span class="footer-block__descr-decor">+372.698.2175</span>
           </p>
           <p class="footer-block__descr">
             ВЕЛИКОБРИТАНИЯ
             <span class="footer-block__descr-decor">+44 741 835-86-82</span>
-          </p>
-          <p class="footer-block__descr footer-email">office@sb-sb.com</p>
+          </p> -->
+          <p class="footer-block__descr footer-email">info@leadgrid.help</p>
         </div>
         <div class="footer-bottom">
-          <p class="footer-copyright">Copyright ©2023 2012—2023 «SBSB» All rights reserved.</p>
+          <p class="footer-copyright">Copyright ©2023 2012—2023. All rights reserved.</p>
         </div>
       </div>
     </footer>
     <script src="./js/app.min.js"></script>
     <script>
-      document.querySelectorAll("a").forEach((e) => {
+      document.querySelectorAll('a[href="#"]').forEach((e) => {
         e.addEventListener("click", (event) => {
           event.preventDefault(); // Отмена стандартного поведения ссылки
           const orderForm = document.querySelector("#orderForm");
